@@ -30,3 +30,19 @@ nome do app(primary-app)
 - npm run web
 
 -- baixar o aplicativo no celular expo go
+
+## => INSTALAÇÃO VIA CLI
+- windows > android
+--https://reactnative.dev/docs/environment-setup?guide=native
+
+
+
+## => Tags
+- <View> semelhante <div>
+- <Text> semelhante <p>
+- <SafeAreView> deixa o conteudo IOS abaixo dos icones nativo do sistema IOS
+- <Pressable> deixa todo o bloco clicavel, ou criar um button do jeito que eu quiser. 
+-- temos 3 tipo de event: onPress( quando clicar), onPressOut(quando solta o clique), onLongPress(quando fica segurando o click com mais de 500ms), dentro do ultimo podemos deixar mais longo o tempo delayLongPress={1000}
+- <TouchableHighlight> - no clique ele destaca a area, pode mudar a cor do destaque passando a prop: underlayColor="#ff0000", OBS: não aceita na tag button
+- <Touchopacity> - no clique ele destaca a area, podemos controlar a opacidade, activeOpacity
+- <TouchableWithoutFeedBack> - não é utilizado.
