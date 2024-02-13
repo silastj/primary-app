@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Button, Text, SafeAreaView, Alert, View } from 'react-native';
+import { colors, fontSize } from './theme';
 import Header from './components/Header';
 import Footer from './components/Footer'
 import Item from './components/Item';
@@ -53,28 +54,28 @@ export default function App() {
       <Text>Aqui é o IDADE: {person.age}</Text>
 
       <Button
-        color="#ff0000"
+        color={colors.primary}
         onPress={() => changeName('novoNome')}
         title="Troque o NOME"
       />
       <Button
-        color="#ff0000"
+        color={colors.primary}
         onPress={() => changeName('SAMRA')}
         title="Troque o Novo NOME"
       />
       <Button
-        color="#ff0000"
+        color={colors.primary}
         onPress={() => changeAge(100)}
         title="Troque o AGE"
       />
       <Button
-        color="#fff"
+        color={colors.primaryLight}
         onPress={() => setCount(count + 1)}
         title="Quantidades de clique nesse button!"
       />
       <Button
         title="Aperte aqui"
-        color="#ff0000"
+        color={colors.primary}
         onPress={() => Alert.alert('clicouuuuuuuuuuuuuuuuu')}
       />
       <Button
@@ -122,12 +123,12 @@ const styles = StyleSheet.create({
 
   },
   text: {
-    color: '#fff',
+    color: colors.primaryLight,
     textTransform: 'uppercase',
     fontSize: 36
   },
   text2: {
-    color: '#fff',
+    color: colors.primaryLight,
     textTransform: 'uppercase',
     fontSize: 36
   },

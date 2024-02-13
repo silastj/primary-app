@@ -17,7 +17,7 @@ https://snack.expo.dev/
 
 
 ## => INSTALAÇÃO
-
+npx expo
 npx crate-expo-app  --template 
 blank typescript
 nome do app(primary-app)
@@ -46,3 +46,8 @@ nome do app(primary-app)
 - <TouchableHighlight> - no clique ele destaca a area, pode mudar a cor do destaque passando a prop: underlayColor="#ff0000", OBS: não aceita na tag button
 - <Touchopacity> - no clique ele destaca a area, podemos controlar a opacidade, activeOpacity
 - <TouchableWithoutFeedBack> - não é utilizado.
+
+
+## => Problem cache 
+- npm start --clean-cache
+- npx react-native doctor `verifica oq está com problema`
